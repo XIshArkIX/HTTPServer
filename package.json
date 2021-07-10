@@ -2,10 +2,11 @@
   "name": "http-simple-node-server",
   "version": "0.1.0",
   "description": "A simple nodejs http(s) server",
-  "main": "main.js",
+  "main": "./build/src/lib/HTTPServer/HTTPServer.js",
+  "types": "./build/src/lib/HTTPServer/HTTPServer.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^15.12.2"
+    "@types/node": "^16.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +19,8 @@
     "url": "git+https://github.com/XIshArkIX/HTTPServer.git"
   },
   "keywords": [
-    "http"
+    "http",
+    "https"
   ],
   "author": "XIshArkIX",
   "license": "ISC",
