@@ -1,0 +1,8 @@
+node_modules/
+static/
+certs/
+build/
+data/
+test.test.ts
+*.log
+main.ts

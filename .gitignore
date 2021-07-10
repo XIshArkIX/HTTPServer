@@ -1,0 +1,11 @@
+node_modules/
+handlers/
+static/
+certs/
+build/
+data/
+*.log
+main.ts
+logger.ts
+sbsClient.ts
+rootHandler.tz

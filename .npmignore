@@ -1,0 +1,17 @@
+node_modules/
+handlers/
+.vscode/
+static/
+certs/
+build/
+tests/
+data/
+Dockerfile
+docker-compose.yaml
+.dockerignore
+*.log
+*.test.ts
+logger.ts
+sbsClient.ts
+main.ts
+rootHandler.tz
