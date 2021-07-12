@@ -11,6 +11,7 @@ docker-compose.yaml
 .dockerignore
 *.log
 *.test.ts
+!tests/
 logger.ts
 sbsClient.ts
 main.ts

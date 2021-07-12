@@ -1,7 +1,6 @@
 import HTTPHandler from '../src/lib/HTTPHandler/HTTPHandler';
 import { EventFunctionsType } from '../src/lib/HTTPServer/enums/EventFunctions';
 import Parser from 'rss-parser';
-import { OutgoingHttpHeaders } from 'http';
 
 const parser = new Parser();
 
@@ -52,7 +51,7 @@ export default class RSSHandler implements HTTPHandler {
 
     parser
       .parseURL(jsonReq.url)
-      .then((obj) => {
+      .then((obj: Record<string, any>) => {
         reqEnd = Date.now();
         res.setHeader('Content-Type', 'text/json');
         res.setHeader(
@@ -62,7 +61,7 @@ export default class RSSHandler implements HTTPHandler {
         res.writeHead(200);
         res.end(obj);
       })
-      .catch((err) => {
+      .catch((err: Error) => {
         reqEnd = Date.now();
         res.setHeader('Content-Type', 'text/plain');
         res.setHeader(
