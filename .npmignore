@@ -10,4 +10,8 @@ Dockerfile
 docker-compose.yaml
 .dockerignore
 *.log
+**/*.log
 *.test.ts
+**/*.test.ts
+README.md
+!.
