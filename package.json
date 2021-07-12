@@ -4,8 +4,6 @@
   "description": "A simple nodejs http(s) server",
   "main": "./src/lib/HTTPServer/index.ts",
   "files": [
-    "./build/src/lib/**/*.js",
-    "./build/src/lib/**/*.d.ts",
     "./src/lib/"
   ],
   "dependencies": {},
