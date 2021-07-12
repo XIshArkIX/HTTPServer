@@ -1,12 +1,12 @@
 {
   "name": "http-simple-node-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple nodejs http(s) server",
-  "main": "./build/src/lib/HTTPServer/index.js",
-  "types": "./build/src/lib/HTTPServer/index.d.ts",
+  "main": "./src/lib/HTTPServer/index.ts",
   "files": [
     "./build/src/lib/**/*.js",
-    "./build/src/lib/**/*.d.ts"
+    "./build/src/lib/**/*.d.ts",
+    "./src/lib/"
   ],
   "dependencies": {},
   "devDependencies": {
