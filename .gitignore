@@ -1,5 +1,6 @@
 node_modules/
 handlers/
+.github/
 static/
 certs/
 build/

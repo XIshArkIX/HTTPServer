@@ -1,4 +1,6 @@
 node_modules/
+.github/
+.vscode/
 static/
 certs/
 build/
