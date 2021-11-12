@@ -138,19 +138,23 @@ class HTTPServer {
       return;
     }
 
-    handler.pre && handler.pre(req);
+    handler.pre?.(req);
 
     req.on('data', (chunk) => buffer.push(chunk));
     req.on('end', () => {
       handler.on(req, res, Buffer.concat(buffer));
-      handler.post && handler.post();
+      handler.post?.();
     });
   };
 
   start() {
     const { key, cert, PORT, address } = this;
+    const [major] = process.version.slice(1).split('.').map(Number);
 
-    if (cluster.isMaster) {
+    if (
+      (major < 16 && cluster!.isMaster) ||
+      (major >= 16 && cluster.isPrimary)
+    ) {
       new Array(CPUS).fill(1).forEach(() => cluster.fork());
     } else {
       this.loadHandlers('./handlers');
