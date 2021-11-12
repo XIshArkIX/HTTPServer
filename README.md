@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/XIshArkIX/HTTPServer/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/XIshArkIX/HTTPServer/actions/workflows/codeql-analysis.yml)
+
 # http-simple-node-server
 
 Simplify creating http(s) servers
